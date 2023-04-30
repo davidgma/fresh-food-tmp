@@ -50,21 +50,21 @@ body {
 }
 
 .container {
-  width: clamp(200px, 90%, 500px);
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.container .primary-school {
-  background-image: url("https://filedn.com/l8l3tmJlFBQbibudQ3R2XYu/fresh-food/primary-school-smaller.png");
-  font-size: clamp(10px, 5vw, 25px);
-  padding: min(5vh, 5vw);
-  padding-left: 21%;
-  padding-right: 2%;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.container img {
   border-radius: 5px;
-  color: white;
+  width: clamp(200px, 90%, 500px);
+}
+.container article {
+  width: clamp(200px, 90%, 500px);
+  font-size: clamp(12px, 6vw, 30px);
+  text-align: center;
+  margin: min(2vh, 2vw);
 }
 
 .features {
@@ -76,25 +76,14 @@ body {
 }
 .features .feature {
   display: flex;
-  width: 90%;
+  width: clamp(200px, 90%, 500px);
   margin: auto;
   flex-direction: column;
   align-items: center;
   padding-top: min(2vh, 2vw);
 }
-@media screen and (min-width: 800px) {
-  .features .feature {
-    max-width: 30%;
-  }
-}
 .features .feature p {
-  font-size: 0.9rem;
-  max-width: 500px;
-}
-@media screen and (min-width: 800px) {
-  .features .feature p {
-    font-size: 1.3rem;
-  }
+  font-size: clamp(12px, 4vw, 25px);
 }
 .features .feature p a {
   text-decoration: none;
@@ -103,6 +92,11 @@ body {
 .features .feature p a:hover {
   background: lightgray;
   border-radius: 5px;
+}
+.features .feature img {
+  border-radius: 12vw;
+  height: clamp(50px, 30vw, 200px);
+  padding: min(2vh, 2vw);
 }
 
 .icons {
