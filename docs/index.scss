@@ -1,3 +1,9 @@
+$s1: min(1vh, 1vw);
+$s2: min(2vh, 2vw);
+$s8: min(8vh, 8vw);
+$s15: min(15vh, 15vw);
+$s20: min(20vh, 20vw);
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,17 +18,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: min(2vh, 2vw);
+  padding: $s2;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
 
   & h1 {
     color: blue;
-    font-size: min(8vh, 8vw);
+    font-size: $s8;
     @media screen and (min-width: 800px) {
       //font-size: 3rem;
     }
+  }
+
+  & img {
+    height: $s15;
+    padding: $s1;
   }
 }
 
@@ -32,7 +43,7 @@ body {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  
+
   .feature {
     display: flex;
     width: 90%;
@@ -43,18 +54,18 @@ body {
     @media screen and (min-width: 800px) {
       max-width: 30%;
     }
-  
+
     & p {
       font-size: 0.9rem;
       max-width: 500px;
       @media screen and (min-width: 800px) {
         font-size: 1.3rem;
       }
-  
+
       & a {
         text-decoration: none;
         color: blue;
-  
+
         &:hover {
           background: lightgray;
           border-radius: 5px;
@@ -63,7 +74,6 @@ body {
     }
   }
 }
-
 
 .icons {
   height: 50px;

@@ -21,6 +21,11 @@ body {
   color: blue;
   font-size: min(8vh, 8vw);
 }
+.header img {
+  height: min(15vh, 15vw);
+  padding: min(1vh, 1vw);
+}
+
 .features {
   display: flex;
   flex-wrap: wrap;
