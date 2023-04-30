@@ -59,6 +59,7 @@ body {
 
     & p {
       text-align: center;
+      padding: $s1;
 
       & a {
         cursor: pointer;
@@ -86,6 +87,10 @@ body {
     font-size: clamp(12px, 6vw, 30px);
     text-align: center;
     margin: $s2;
+
+    & p {
+      padding: $s1;
+    }
   }
 }
 
