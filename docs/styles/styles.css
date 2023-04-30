@@ -14,17 +14,12 @@ body {
   align-items: center;
   padding: min(2vh, 2vw);
   text-align: center;
+  cursor: pointer;
 }
 .header h1 {
   color: blue;
-  font-size: min(10vh, 10vw);
+  font-size: min(8vh, 8vw);
 }
-@media screen and (min-width: 800px) {
-  .header h1 {
-    font-size: 3rem;
-  }
-}
-
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -32,40 +27,40 @@ body {
   align-items: center;
   text-align: center;
 }
-
-.feature {
+.features .feature {
   display: flex;
   width: 90%;
   margin: auto;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
+  padding-top: min(2vh, 2vw);
 }
 @media screen and (min-width: 800px) {
-  .feature {
+  .features .feature {
     max-width: 30%;
   }
 }
-.feature p {
+.features .feature p {
   font-size: 0.9rem;
   max-width: 500px;
 }
 @media screen and (min-width: 800px) {
-  .feature p {
+  .features .feature p {
     font-size: 1.3rem;
   }
 }
-.feature p a {
+.features .feature p a {
   text-decoration: none;
   color: blue;
 }
-.feature p a:hover {
+.features .feature p a:hover {
   background: lightgray;
   border-radius: 5px;
 }
 
 .icons {
   height: 50px;
+  padding: min(2vh, 2vw);
 }
 
 .myClass {

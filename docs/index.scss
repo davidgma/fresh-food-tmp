@@ -14,12 +14,13 @@ body {
   align-items: center;
   padding: min(2vh, 2vw);
   text-align: center;
+  cursor: pointer;
 
   & h1 {
     color: blue;
-    font-size: min(10vh, 10vw);
+    font-size: min(8vh, 8vw);
     @media screen and (min-width: 800px) {
-      font-size: 3rem;
+      //font-size: 3rem;
     }
   }
 }
@@ -30,41 +31,42 @@ body {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  // margin: auto;
-}
-
-.feature {
-  display: flex;
-  width: 90%;
-  margin: auto;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1rem;
-  @media screen and (min-width: 800px) {
-    max-width: 30%;
-  }
-
-  & p {
-    font-size: 0.9rem;
-    max-width: 500px;
+  
+  .feature {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: min(2vh, 2vw);
     @media screen and (min-width: 800px) {
-      font-size: 1.3rem;
+      max-width: 30%;
     }
-
-    & a {
-      text-decoration: none;
-      color: blue;
-
-      &:hover {
-        background: lightgray;
-        border-radius: 5px;
+  
+    & p {
+      font-size: 0.9rem;
+      max-width: 500px;
+      @media screen and (min-width: 800px) {
+        font-size: 1.3rem;
+      }
+  
+      & a {
+        text-decoration: none;
+        color: blue;
+  
+        &:hover {
+          background: lightgray;
+          border-radius: 5px;
+        }
       }
     }
   }
 }
 
+
 .icons {
   height: 50px;
+  padding: min(2vh, 2vw);
 }
 
 .myClass {
