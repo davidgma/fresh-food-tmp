@@ -24,7 +24,7 @@ body {
   align-items: center;
   text-align: center;
   padding: $s2;
-  
+
   & .home {
     cursor: pointer;
     padding: $s2;
@@ -44,43 +44,48 @@ body {
       }
     }
   }
-  
+
   & .temp-notice {
     display: flex;
     flex-direction: column;
     // justify-content: center;
     align-items: center;
     padding: $s2;
-    
+
     & img {
       height: $s15;
       padding: $s1;
     }
-    
+
     & p {
       text-align: center;
-      
+
       & a {
         cursor: pointer;
         text-decoration: none;
         color: $foreground2;
       }
     }
-
   }
 }
 
-.primary-school {
-  background-image: url('https://filedn.com/l8l3tmJlFBQbibudQ3R2XYu/fresh-food/primary-school-smaller.png');
-  color: white;
-  font-size: 5vw;
-  padding: min(5vh, 5vw);
-  padding-left: 21%;
-  padding-right: 2%;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.container {
+  width: clamp(200px, 90%, 500px);
+  // width: 90%;
+  margin: auto;
+  .primary-school {
+    background-image: url('https://filedn.com/l8l3tmJlFBQbibudQ3R2XYu/fresh-food/primary-school-smaller.png');
+    font-size: clamp(10px, 5vw, 25px);
+    padding: min(5vh, 5vw);
+    padding-left: 21%;
+    padding-right: 2%;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+    color: white;
+  }
 }
 
 .features {
