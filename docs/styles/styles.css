@@ -94,7 +94,7 @@ body {
   border-radius: 5px;
 }
 .features .feature img {
-  border-radius: 12vw;
+  border-radius: clamp(2px, 8vw, 30px);
   height: clamp(50px, 30vw, 200px);
   padding: min(2vh, 2vw);
 }
