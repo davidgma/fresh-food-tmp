@@ -3,6 +3,9 @@ $s2: min(2vh, 2vw);
 $s8: min(8vh, 8vw);
 $s15: min(15vh, 15vw);
 $s20: min(20vh, 20vw);
+$foreground1: black;
+$foreground2: blue;
+$background: white;
 
 * {
   box-sizing: border-box;
@@ -20,10 +23,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  cursor: pointer;
   padding: $s2;
-
-  & a {
+  
+  & .home {
+    cursor: pointer;
     padding: $s2;
     display: flex;
     text-decoration: none;
@@ -34,29 +37,34 @@ body {
     }
 
     & h1 {
-      color: blue;
+      color: $foreground2;
       font-size: $s8;
       @media screen and (min-width: 800px) {
         //font-size: 3rem;
       }
     }
   }
+  
   & .temp-notice {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
-    text-align: center;
-    cursor: pointer;
     padding: $s2;
-
-     & img {
+    
+    & img {
       height: $s15;
       padding: $s1;
     }
-
+    
     & p {
       text-align: center;
+      
+      & a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $foreground2;
+      }
     }
 
   }

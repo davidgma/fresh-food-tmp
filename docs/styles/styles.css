@@ -14,29 +14,26 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  cursor: pointer;
   padding: min(2vh, 2vw);
 }
-.header a {
+.header .home {
+  cursor: pointer;
   padding: min(2vh, 2vw);
   display: flex;
   text-decoration: none;
 }
-.header a img {
+.header .home img {
   height: min(15vh, 15vw);
   padding: min(1vh, 1vw);
 }
-.header a h1 {
+.header .home h1 {
   color: blue;
   font-size: min(8vh, 8vw);
 }
 .header .temp-notice {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  cursor: pointer;
   padding: min(2vh, 2vw);
 }
 .header .temp-notice img {
@@ -45,6 +42,11 @@ body {
 }
 .header .temp-notice p {
   text-align: center;
+}
+.header .temp-notice p a {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
 }
 
 .features {
