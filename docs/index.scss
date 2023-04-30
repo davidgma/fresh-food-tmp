@@ -16,24 +16,49 @@ body {
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: $s2;
   text-align: center;
   cursor: pointer;
-  text-decoration: none;
+  padding: $s2;
 
-  & h1 {
-    color: blue;
-    font-size: $s8;
-    @media screen and (min-width: 800px) {
-      //font-size: 3rem;
+  & a {
+    padding: $s2;
+    display: flex;
+    text-decoration: none;
+
+    & img {
+      height: $s15;
+      padding: $s1;
+    }
+
+    & h1 {
+      color: blue;
+      font-size: $s8;
+      @media screen and (min-width: 800px) {
+        //font-size: 3rem;
+      }
     }
   }
+  & .temp-notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: $s2;
 
-  & img {
-    height: $s15;
-    padding: $s1;
+     & img {
+      height: $s15;
+      padding: $s1;
+    }
+
+    & p {
+      text-align: center;
+    }
+
   }
 }
 
@@ -80,10 +105,6 @@ body {
   padding: min(2vh, 2vw);
 }
 
-.myClass {
-  font-size: 1rem;
-  color: green;
-}
 footer {
   a {
     font-size: 0.5rem;

@@ -10,20 +10,41 @@ body {
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: min(2vh, 2vw);
   text-align: center;
   cursor: pointer;
+  padding: min(2vh, 2vw);
+}
+.header a {
+  padding: min(2vh, 2vw);
+  display: flex;
   text-decoration: none;
 }
-.header h1 {
+.header a img {
+  height: min(15vh, 15vw);
+  padding: min(1vh, 1vw);
+}
+.header a h1 {
   color: blue;
   font-size: min(8vh, 8vw);
 }
-.header img {
+.header .temp-notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: min(2vh, 2vw);
+}
+.header .temp-notice img {
   height: min(15vh, 15vw);
   padding: min(1vh, 1vw);
+}
+.header .temp-notice p {
+  text-align: center;
 }
 
 .features {
@@ -67,11 +88,6 @@ body {
 .icons {
   height: 50px;
   padding: min(2vh, 2vw);
-}
-
-.myClass {
-  font-size: 1rem;
-  color: green;
 }
 
 footer a {
